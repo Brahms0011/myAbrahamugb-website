@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+
+    <!-- Your main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Local Font Awesome (Offline Support) -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Optional favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- ---------------- Header ---------------- -->
+    <header id="header"> 
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Abraham</span><br>Okeme from Nigeria</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- ---------------- About ---------------- -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img id="user" src="images/user.jpg" alt="Abraham's Profile Picture">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="about-title">About Me</h1>
+                    <p>
+                        Hi, I’m Okeme Abraham — a Junior Software Developer, Web Developer, and
+                         Graphic Designer who loves turning ideas into functional and beautiful digital experiences.
+                         I enjoy blending creativity with code, designing interfaces that not only look good but also work smoothly.
+                         My goal is to create websites and software that feel simple, useful, and enjoyable for people to use.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="openTab('education', event)">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Graphic Design</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/Web Applications</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Present</span><br>Freelance UI/UX & Frontend Developer</li>
+                            <li><span>2022</span><br>Intern - Creative Design Studio</li>
+                            <li><span>2021</span><br>Junior Web Developer (Personal Projects)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Eng Electrical and Electronics Engineering</span><br>Delta State University</li>
+                            <li><span>UI/UX Design</span><br>Self-Taught / Online Courses</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, React</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------- Services ---------------- -->
+    <section id="services">
+        <div class="container">
+            <h1 class="about-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Data Management & Analysis</h2>
+                    <p>
+                        Collecting, cleaning, validating, and analyzing data using
+                         tools like NMRS, DHIS2, Excel, Google Sheets, and ODK to 
+                         ensure accuracy and support program decision-making.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Technical Support & Digital Systems Setup</h2>
+                    <p>
+                        Providing tech assistance, setting up data collection tools 
+                        (ODK, KoboCollect, OneApp), managing digital training systems, 
+                        and troubleshooting ICT-related issues during field or remote operations.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Graphic Design & Visual Communication</h2>
+                    <p>
+                        Creating digital and print designs — including posters,
+                        flyers, reports, and promotional materials — using Adobe Suite, 
+                        Canva, and other creative tools.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------- Portfolio ---------------- -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="about-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Social Media App">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to talented people around the world. Download it from Play Store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Music App">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to talented people around the world. Download it from Play Store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Calculator App">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>A sleek calculator with a simple UI and smooth UX design for quick calculations.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </section>
+
+    <!-- ---------------- Contact ---------------- -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="about-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> okemeabrahamugb@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 08141177814</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/okeme.abbas.abraham"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Okeme Abraham U_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Abbas. My Coding Passion <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </section>
+
+    <!-- ---------------- Scripts ---------------- -->
+       <script>
+  // ---------------- Tab Navigation ----------------
+  const tabLinks = document.querySelectorAll(".tab-links");
+  const tabContents = document.querySelectorAll(".tab-contents");
+
+  function openTab(tabName, event) {
+    // Remove active classes
+    tabLinks.forEach(link => link.classList.remove("active-link"));
+    tabContents.forEach(content => content.classList.remove("active-tab"));
+
+    // Add active classes to clicked tab
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabName).classList.add("active-tab");
+  }
+
+  // ---------------- Menu Toggle ----------------
+  const sidemenu = document.getElementById("sidemenu");
+  const barsIcon = document.querySelector(".fa-bars");
+
+  function openMenu() {
+    sidemenu.classList.add("show");
+    sidemenu.style.right = "0";
+    barsIcon.style.display = "none"; // Hide hamburger
+  }
+
+  function closeMenu() {
+    sidemenu.classList.remove("show");
+    sidemenu.style.right = "-200px";
+    barsIcon.style.display = "block"; // Show hamburger again
+  }
+
+  // ---------------- Auto Close Menu on Link Click (Mobile) ----------------
+  const navLinks = sidemenu.querySelectorAll("li a");
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 768) {
+        closeMenu();
+      }
+    });
+  });
+
+  // ---------------- Smooth Scroll Effect ----------------
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href");
+      if (targetId.startsWith("#") && targetId.length > 1) {
+        e.preventDefault();
+        document.querySelector(targetId).scrollIntoView({
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+
+  // ---------------- Optional: Responsive Behavior on Resize ----------------
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      sidemenu.style.right = "0";
+      barsIcon.style.display = "none";
+    } else {
+      sidemenu.style.right = "-200px";
+      barsIcon.style.display = "block";
+    }
+  });
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzms83506ljmo5QcKkzSQ_MBe5CqQ_-qtFPEh57DTiou3lJMWDen637rgEufwr9ekqM/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
